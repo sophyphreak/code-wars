@@ -1,4 +1,4 @@
-let memoized = [0, 1];
+const memoized = [0, 1];
 
 const fibonacci = n => {
   if (n < memoized.length) {
