@@ -3,7 +3,7 @@ const memoized = [0, 1];
 const fibonacci = n => {
   if (n < memoized.length) {
     return memoized[n];
-  };
+  }
   const result = fibonacci(n - 1) + fibonacci(n - 2);
   memoized.push(result);
   return result;
